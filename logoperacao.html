@@ -141,7 +141,7 @@
             <p class="error" id="erro">Usuário ou senha incorretos!</p>
 
             <button onclick="login()">Entrar</button>
-        </div>
+            <a href="op_cadastro.html">Cadastre-se</a>
     </main>
 
     <script>
@@ -149,11 +149,11 @@
             const usuario = document.getElementById("usuario").value;
             const senha = document.getElementById("senha").value;
 
-            const usuarioCorreto = "admin";
+            const usuarioCorreto = "marcos@admin";
             const senhaCorreta  = "1234";
 
             if (usuario === usuarioCorreto && senha === senhaCorreta) {
-                window.location.href = "home.html";
+                window.location.href = "..index.html";
             } else {
                 document.getElementById("erro").style.display = "block";
             }
