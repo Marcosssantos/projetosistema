@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+       
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+    .texto body {
+        display: flex;
+        align-items: center;       
+        justify-content: center;
+        height: 100vh;
+    
+        }
+
+    .texto {
+        font-size: 50px;
+        font-weight: 800;
+
+        background: linear-gradient(50deg, #001aff,#0066ff, #ad433b,#ff1100);
+        background-size: 400% 100%;
+        animation: degrade 10s linear infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .tivit {
+        font-family: Arial, sans-serif;
+        font-weight: 900;
+        letter-spacing: 8px;
+        font-size: 76px;
+        
+        text-transform: uppercase;
+    }
+    .almaviva {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        letter-spacing: 3px;
+        margin-top: -10px;
+    }
+
+    @keyframes degrade
+     {
+        0% {
+            background-position: 0%;
+        }   
+        100% {
+            background-position: 400%;
+        }
+    }
+    .login-box {
+        background:transparent;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        width: 580px;
+    }
+
+    .login-box h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .login-box input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .login-box button {
+        width: 100%;
+        padding: 10px;
+        background: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .login-box button:hover {
+        background: #45a049;
+    }
+
+    .error {
+        color: red;
+        text-align: center;
+        display: none;
+    }
